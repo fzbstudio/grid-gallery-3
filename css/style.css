@@ -1,0 +1,244 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Inter", helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+/* === media === */
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1800px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1801px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* === containers === */
+
+.grid-container {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    gap: 0;
+}
+
+.INTERN {
+    display: flex;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.INTERN img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Transicions per a la imatge - zoom més lent a l'entrada, més ràpid a la sortida */
+    transition: opacity 0.3s ease, filter 0.3s ease, transform 2s ease;
+}
+
+/* Transició més lenta només en hover */
+.INTERN:hover img {
+    opacity: 0.2;
+    filter: blur(4px);
+    transform: scale(2.5);
+    transition: opacity 0.3s ease, filter 0.3s ease, transform 5s ease;
+}
+
+.INTERN .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: 0;
+    text-shadow:
+    0 0 25px hsla(250, 10%, 10%, 0.6),
+    0 0 5px hsla(250, 10%, 10%, 0.4);
+    /* Transició per a l'overlay */
+    transition: opacity 0.3s ease;
+}
+
+
+
+.INTERN:hover .overlay {
+    opacity: 1;
+}
+
+/* === colors de fons === */
+
+#imatge-01 {
+    background-color: hsl(210, 55%, 75%);
+}
+
+#imatge-02 {
+    background-color: hsl(208, 55%, 75%);
+}
+
+#imatge-03 {
+    background-color: hsl(312, 55%, 75%);
+}
+
+#imatge-04 {
+    background-color: hsl(139, 55%, 75%);
+}
+
+#imatge-05 {
+    background-color: hsl(196, 55%, 75%);
+}
+
+#imatge-06 {
+    background-color: hsl(44, 55%, 75%);
+}
+
+#imatge-07 {
+    background-color: hsl(14, 55%, 75%);
+}
+
+#imatge-08 {
+    background-color: hsl(206, 55%, 75%);
+}
+
+#imatge-09 {
+    background-color: hsl(90, 55%, 75%);
+}
+
+#imatge-10 {
+    background-color: hsl(189, 55%, 75%);
+}
+
+#imatge-11 {
+    background-color: hsl(110, 55%, 75%);
+}
+
+#imatge-12 {
+    background-color: hsl(120, 55%, 75%);
+}
+
+#imatge-13 {
+    background-color: hsl(58, 55%, 75%);
+}
+
+#imatge-14 {
+    background-color: hsl(140, 55%, 75%);
+}
+
+#imatge-15 {
+    background-color: hsl(150, 55%, 75%);
+}
+
+#imatge-16 {
+    background-color: hsl(56, 55%, 75%);
+}
+
+#imatge-17 {
+    background-color: hsl(344, 55%, 75%);
+}
+
+#imatge-18 {
+    background-color: hsl(90, 55%, 75%);
+}
+
+#imatge-19 {
+    background-color: hsl(60, 55%, 75%);
+}
+
+#imatge-20 {
+    background-color: hsl(104, 55%, 75%);
+}
+
+#imatge-21 {
+    background-color: hsl(337, 55%, 75%);
+}
+
+#imatge-22 {
+    background-color: hsl(238, 55%, 75%);
+}
+
+#imatge-23 {
+    background-color: hsl(203, 55%, 75%);
+}
+
+#imatge-24 {
+    background-color: hsl(35, 55%, 75%);
+}
+
+#imatge-25 {
+    background-color: hsl(208, 55%, 75%);
+}
+
+#imatge-26 {
+    background-color: hsl(260, 55%, 75%);
+}
+
+#imatge-27 {
+    background-color: hsl(335, 55%, 75%);
+}
+
+#imatge-28 {
+    background-color: hsl(280, 55%, 75%);
+}
+
+#imatge-29 {
+    background-color: hsl(290, 55%, 75%);
+}
+
+#imatge-30 {
+    background-color: hsl(346, 55%, 75%);
+}
+
+#imatge-31 {
+    background-color: hsl(310, 55%, 75%);
+}
+
+#imatge-32 {
+    background-color: hsl(23, 55%, 75%);
+}
+
+#imatge-33 {
+    background-color: hsl(30, 55%, 75%);
+}
+
+#imatge-34 {
+    background-color: hsl(213, 55%, 75%);
+}
+
+#imatge-35 {
+    background-color: hsl(263, 55%, 75%);
+}
+
+#imatge-36 {
+    background-color: hsl(243, 55%, 75%);
+}
